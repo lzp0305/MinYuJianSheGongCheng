@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.5&ak=4488f2ed12351ff11de3fa5a44fda7ce"></script>
+</head>
+<body>
+<div id="warp">
+	<div id="header">
+		<img src="images/logo.png" class="logo">
+		<div class="contacts">
+			<div class="telephone"></div>
+			<div class="hotLine">服务热线：</div>
+			<div class="telNum">0791-1234567</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li style="width: 95px;"><a href="首页.html">首页</a></li>
+				<li><a href="公司概况.html">公司概况</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">企业业绩</a></li>
+				<li><a href="#">诚聘英才</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+			<div class="search">
+				<button class="searchIcon"><img src="images/searchIcon.gif" alt="搜索"></button>
+				<input type="text" placeholder="输入您想搜索的内容">
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="playBox">
+			<!-- Swiper -->
+			<div class="swiper-container container1">
+				<div class="swiper-wrapper wrapper1">
+					<div class="swiper-slide slide1"><img src="images/1.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/2.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/3.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/4.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/5.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/6.jpg" alt=""></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination pagination1"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next sbn1"></div>
+				<div class="swiper-button-prev sbp1"></div>
+			</div>
+			<script>
+			var swiper = new Swiper('.container1', {
+				pagination: '.pagination1',
+				nextButton: '.sbn1',
+				prevButton: '.sbp1',
+				paginationClickable: true,
+				spaceBetween: 0,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false,
+				loop : true,
+			});
+			</script>
+		</div>
+		<div class="leftBox">
+			<div class="leftNav">
+				<div class="navName">联系我们</div>
+				<div class="navList active"><a href="联系我们.html">联系我们</a></div>
+			</div>
+			<div class="information">
+				<div class="companyName">江西闽禹建设工程有限公司</div>
+				<div class="address">地址：南昌市站前西路福山<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;花园7_2栋2单位502<br />电话：0791-83800108<br />邮箱：zhjlzx01@163.com<br />网址：www.zhjlzx.com<br />
+				</div>
+			</div>
+		</div>
+		<div class="rightBox">
+			<div class="topList">
+				<div class="topListChinese">联系我们</div>
+				<div class="topListEnglish">Contact us</div>
+			</div>
+			<div class="line"></div>
+			<div class="mainBox">
+				<div class="mainBoxImage"><img src="images/mainImage2.png" alt=""></div>
+				<div class="infoBox">
+					<div class="infoBoxTitle">江西闽禹建设工程有限公司</div>
+					<div class="infoBoxText">地址：南昌市站前西路福山花园7_2栋2单位502<br />电话：0791-88529696<br />传真：0791-89028998<br />邮编：3300000<br />主页：http：//www.ncwzjt.com</div>
+				</div>
+				<div class="map">
+					<div style="border:1px solid #e7e7e7; width:740px; height:365px;">
+						<div class="con_map" id="dituContent"></div>
+						<div style="display:none" id="mapbox" ></div>   
+					</div> 
+					<script type="text/javascript">
+						var ps1;
+						var ps2;
+						var adrs = "南昌市青山湖区北京东路458号东方银座5楼";
+						selfsearch(adrs);
+						function selfsearch(address) {
+							adrs = address;
+							var myGeo = new BMap.Geocoder();
+							myGeo.getPoint(address, function (point) {
+								if (point) {
+									ps1 = point.lng;
+									ps2 = point.lat; 
+									initMap();//创建和初始化地图
+								}
+            
+							}, "");
+							//以上用来地址转换坐标
+						}
+						//创建和初始化地图函数：
+						function initMap(){
+							createMap();//创建地图
+							setMapEvent();//设置地图事件
+							addMapControl();//向地图添加控件
+							addMarker();//向地图中添加marker
+						}
+						//创建地图函数：
+						function createMap(){
+							var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+							var point = new BMap.Point(ps1,ps2);//定义一个中心点坐标
+							map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+							window.map = map;//将map变量存储在全局
+						}
+						//地图事件设置函数：
+						function setMapEvent(){
+							map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+							map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+							map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+							map.enableKeyboard();//启用键盘上下左右键移动地图
+						}
+						//地图控件添加函数：
+						function addMapControl(){
+							 //向地图中添加缩放控件
+							var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+							map.addControl(ctrl_nav);
+							//向地图中添加比例尺控件
+							var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+							map.addControl(ctrl_sca);
+						}
+						//标注点数组
+						var markerArr = [{content:document.getElementById("mapbox").innerHTML,isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+						];
+						//创建marker
+						function addMarker(){
+							for(var i=0;i<markerArr.length;i++){
+								var json = markerArr[i];
+								var point = new BMap.Point(ps1,ps2);
+								var iconImg = createIcon(json.icon);
+								var marker = new BMap.Marker(point,{icon:iconImg});
+								var iw = createInfoWindow(i);
+								var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+								marker.setLabel(label);
+								map.addOverlay(marker);
+								label.setStyle({
+									borderColor:"#808080",
+									color:"#333",
+									cursor:"pointer",
+									display:"none"
+								});
+								(function(){
+									var index = i;
+									var _iw = createInfoWindow(i);
+									var _marker = marker;
+									_marker.addEventListener("click",function(){
+										this.openInfoWindow(_iw);
+									});
+									_iw.addEventListener("open",function(){
+										_marker.getLabel().hide();
+									})
+									_iw.addEventListener("close",function(){
+										_marker.getLabel().hide();
+									})
+									label.addEventListener("click",function(){
+										_marker.openInfoWindow(_iw);
+									})
+									if(!!json.isOpen){
+										label.hide();
+										_marker.openInfoWindow(_iw);
+									}
+								})()
+							}
+						}
+						//创建InfoWindow
+						function createInfoWindow(i){
+							var json = markerArr[i];
+							var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + "云端科技" + "</b><div class='iw_poi_content'><p style='white-space:nowrap'>地址：南昌市青山湖区北京东路458号东方银座5楼</p><p>联系电话:31313131 / 12345678901 </p></div>");
+							return iw;
+						}
+						//创建一个Icon
+						function createIcon(json){
+							var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+							return icon;
+						}
+					</script>      
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footerLine"></div>
+		<div class="friendsLink">
+			友情链接：
+			<div class="friendsList">
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+			</div>
+		</div>
+		<div class="copyRight">
+			地址：南昌市站前西路福山花园7_2栋2单位502   咨询热线：0791-28712933<br />
+			备案号：赣ICP备464313313号 Copyright © 2016 江西闽禹建设工程有限公司 版权所有  技术支持：云端科技
+		</div>
+	</div>
+</div>	
+</body>
+</html>

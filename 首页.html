@@ -1,0 +1,407 @@
+<!--
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+             .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         佛祖保佑       永无BUG
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闽禹建设工程</title>
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+</head>
+<body>
+<div id="warp">
+	<div id="header">
+		<img src="images/logo.png" class="logo">
+		<div class="contacts">
+			<div class="telephone"></div>
+			<div class="hotLine">服务热线：</div>
+			<div class="telNum">0791-1234567</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li style="width: 95px;"><a href="首页.html">首页</a></li>
+				<li><a href="公司概况.html">公司概况</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">企业业绩</a></li>
+				<li><a href="#">诚聘英才</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+			<div class="search">
+				<button class="searchIcon"><img src="images/searchIcon.gif" alt="搜索"></button>
+				<input type="text" placeholder="输入您想搜索的内容">
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="playBox">
+			<!-- Swiper -->
+			<div class="swiper-container container1">
+				<div class="swiper-wrapper wrapper1">
+					<div class="swiper-slide slide1"><img src="images/1.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/2.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/3.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/4.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/5.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/6.jpg" alt=""></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination pagination1"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next sbn1"></div>
+				<div class="swiper-button-prev sbp1"></div>
+			</div>
+			<script>
+			var swiper = new Swiper('.container1', {
+				pagination: '.pagination1',
+				nextButton: '.sbn1',
+				prevButton: '.sbp1',
+				paginationClickable: true,
+				spaceBetween: 0,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false,
+				loop : true,
+			});
+			</script>
+		</div>
+
+		<div class="firstArea">
+			<div class="firstShowBox">
+				<div class="swiper-container container2">
+					<div class="swiper-wrapper wrapper2">
+						<div class="swiper-slide slide2"><img src="images/indexShow1-1.png" alt=""></div>
+						<div class="swiper-slide slide2"><img src="images/indexShow1-2.png" alt=""></div>
+						<div class="swiper-slide slide2"><img src="images/indexShow1-3.png" alt=""></div>
+						<div class="swiper-slide slide2"><img src="images/indexShow1-4.png" alt=""></div>
+					</div>
+				<!-- Add Pagination -->
+					<div class="swiper-pagination pagination2">
+						<span class="swiper-pagination-bullet spb2">1</span>
+						<span class="swiper-pagination-bullet spb2">2</span>
+						<span class="swiper-pagination-bullet spb2">3</span>
+						<span class="swiper-pagination-bullet spb2">4</span>
+					</div>
+					<div class="shade"></div>
+				</div>
+				 <script>
+					var mySwiper = new Swiper('.container2', {
+					paginationType : 'bullets',
+					pagination: '.pagination2',
+					paginationClickable: true,
+					paginationBulletRender: function (index, className) {
+					return '<span class="' + className + '">' + (index + 1) + '</span>';
+					},
+					spaceBetween: 0,
+					centeredSlides: true,
+					autoplay: 2500,
+					autoplayDisableOnInteraction: false,
+					loop: true
+				});
+    				</script>
+			</div>
+			<div class="companyDynamics">
+				<div class="titleBarNameCap"></div>
+				<div class="companyTitleBar">
+					<div class="companyTitleBarName">
+						公司动态
+						<div class="companyDynamicsTitleBarNameNews"></div>
+					</div>
+					<div class="companyPageIcon"></div>
+				</div>
+				<div class="companyDynamicsTextBox">
+					<div class="companyDynamicsTitleText">
+						新建区春风河节制闸除险加固工程
+					</div>
+					<div class="companyDynamicsMainText">
+						    &nbsp;&nbsp;根据赣发改设审[2016]1号文，本工程为中型水闸工程，主要水工建筑物级别为3级，根据住房和城乡建设部《建筑业企业资质标准...
+					</div>
+					<div class="companyDynamicsList">
+						<ul class="companyDynamicsListLeft">
+							<li><a href="#">宁都县黄陂中学运动场工程招标公告</a></li>
+							<li><a href="#">陡水湖景区综合停车场赏石文化广场工程施工招标公告</a></li>
+							<li><a href="#">奉新县赤岸镇沿里小学新建食堂项目</a></li>
+							<li><a href="#">奉新县赤岸镇城下小学新建学生宿舍项目</a></li>
+						</ul>
+						<ul class="companyDynamicsListRight">
+							<li>2016-02-10</li>
+							<li>2016-02-10</li>
+							<li>2016-02-10</li>
+							<li>2016-02-10</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="latestAnnouncement">
+				<div class="companyTitleBar"><!--这里可以在内部改样式，因为和设计图的不一样  style="background-image:none; background-color:#fff;"-->
+					<div class="companyTitleBarName" style="background-image:url(images/titleBarNameType2.png); width: 127px; line-height:58px;">
+						最新公告
+					</div>
+					<div class="companyPageIcon"></div>
+				</div>
+				<div class="latestAnnouncementMainBox">
+					<ul>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+						<li class="latestAnnouncementList"><a href="#">德安县2016年抗旱应急水源工程</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="secondArea">
+			<div class="companyProfile">
+				<div class="titleBarNameCap"></div>
+				<div class="companyTitleBar">
+					<div class="companyTitleBarName">
+						公司简介
+					</div>
+					<div class="companyPageIcon"></div>
+				</div>
+				<div class="companyProfileMainBox">
+					<div class="companyProfilePic"></div>
+					<div class="companyProfileText">&nbsp;&nbsp;江西省闽禹建设工程有限公司成立于2011年7月，位于 “文化昌盛，人文荟萃，才子之乡，文化之邦”，著名的宜业、宜居、宜游的“三宜城市”中国抚州市。处于“南昌远郊、闽台近邻”。公司以市政公用工程施工为主，注册资本金2000万人民币，现有在职职工116人...</div>
+				</div>
+			</div>
+			<div class="enterprisePerformance">
+				<div class="titleBarNameCap"></div>
+				<div class="companyTitleBar">
+					<div class="companyTitleBarName">
+						企业业绩
+					</div>
+				</div>
+				<div class="enterprisePerformanceTab">
+					<div id="tab1">
+						<ul>
+							<li onclick="setTab(1,0)" class="now">房建</li>
+							<li onclick="setTab(1,1)">市政</li>
+							<li onclick="setTab(1,2)">水利</li>
+							<li onclick="setTab(1,3)">装饰装修</li>
+						</ul>
+						<div class="more"><a href="#">MORE+</a></div>
+					</div>
+					<div id="tablist1">
+						<div class="tablist block">
+							<span>
+								<ul>
+									<li><a href="#">2011年度宜春项目代理业绩</a><span class="righttime">2016-02-10</span></li>
+									<li><a href="#">2011年度宜春项目代理业绩</a><span class="righttime">2016-02-10</span></li>
+									<li><a href="#">2011年度宜春项目代理业绩</a><span class="righttime">2016-02-10</span></li>
+									<li><a href="#">2011年度宜春项目代理业绩</a><span class="righttime">2016-02-10</span></li>
+									<li><a href="#">2011年度宜春项目代理业绩</a><span class="righttime">2016-02-10</span></li>
+									<li><a href="#">2011年度宜春项目代理业绩</a><span class="righttime">2016-02-10</span></li>
+								</ul>
+							</span>
+						</div>
+						<div class="tablist">
+							<span>
+								<ul>
+									<li><a href="#">水利水电工程施工一级资质企业名单</a><span class="righttime">2016-02-11</span></li>
+									<li><a href="#">水利水电工程施工一级资质企业名单</a><span class="righttime">2016-02-11</span></li>
+									<li><a href="#">水利水电工程施工一级资质企业名单</a><span class="righttime">2016-02-11</span></li>
+									<li><a href="#">水利水电工程施工一级资质企业名单</a><span class="righttime">2016-02-11</span></li>
+									<li><a href="#">水利水电工程施工一级资质企业名单</a><span class="righttime">2016-02-11</span></li>
+									<li><a href="#">水利水电工程施工一级资质企业名单</a><span class="righttime">2016-02-11</span></li>
+								</ul>
+							</span>
+						</div>
+						<div class="tablist">
+							<span>
+								<ul>
+									<li><a href="#">江西省水利资质企业</a><span class="righttime">2016-02-12</span></li>
+									<li><a href="#">江西省水利资质企业</a><span class="righttime">2016-02-12</span></li>
+									<li><a href="#">江西省水利资质企业</a><span class="righttime">2016-02-12</span></li>
+									<li><a href="#">江西省水利资质企业</a><span class="righttime">2016-02-12</span></li>
+									<li><a href="#">江西省水利资质企业</a><span class="righttime">2016-02-12</span></li>
+									<li><a href="#">江西省水利资质企业</a><span class="righttime">2016-02-12</span></li>
+								</ul>
+							</span>
+						</div>
+						<div class="tablist">
+							<span>
+								<ul>
+									<li><a href="#">不知道写什么</a><span class="righttime">2016-02-13</span></li>
+									<li><a href="#">不知道写什么</a><span class="righttime">2016-02-13</span></li>
+									<li><a href="#">不知道写什么</a><span class="righttime">2016-02-13</span></li>
+									<li><a href="#">不知道写什么</a><span class="righttime">2016-02-13</span></li>
+									<li><a href="#">不知道写什么</a><span class="righttime">2016-02-13</span></li>
+									<li><a href="#">不知道写什么</a><span class="righttime">2016-02-13</span></li>
+								</ul>
+							</span>
+						</div>
+					</div>
+					<script type="text/javascript">
+					function setTab(m,n){
+						var menu=document.getElementById("tab"+m).getElementsByTagName("li");  
+						var showdiv=document.getElementById("tablist"+m).getElementsByTagName("div");  
+						for(i=0;i<menu.length;i++)
+							{
+								menu[i].className=i==n?"now":""; 
+								showdiv[i].style.display=i==n?"block":"none"; 
+							}
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="thirdArea">
+			<div class="enterpriseQualification">
+				<div class="titleBarNameCap"></div>
+				<div class="companyTitleBar">
+					<div class="companyTitleBarName">
+						企业资质
+					</div>
+					<div style="width:45px; height:27px;font-family:Arial; font-size:12px; position:absolute; right:12px; bottom:0;"><a href="#">MORE+</a></div>
+				</div>
+				<div class="enterpriseQualifiacationShowBox">
+					<!-- Swiper -->
+					<div class="swiper-container container3">
+						<div class="swiper-wrapper wrapper3">
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							 </div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+                        							<span>公司招标代理资质</span>
+								</div>
+							</div>
+							<div class="swiper-slide slide3">
+								<div class="slide3Main">
+									<img src="images/credential1.png" alt="">
+									<span>公司招标代理资质</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next sbn3"></div>
+					<div class="swiper-button-prev sbp3"></div>
+					<script>
+					var thirdswiper = new Swiper('.container3', {
+						paginationClickable: true,
+						nextButton: '.sbn3',
+						prevButton: '.sbp3',
+						slidesPerView: 5,
+						spaceBetween: 20,
+						breakpoints: {
+							1024: {
+								slidesPerView: 4,
+								spaceBetween: 40
+							},
+							768: {
+								slidesPerView: 3,
+								spaceBetween: 30
+							},
+							640: {
+								slidesPerView: 2,
+								spaceBetween: 20
+							},
+							320: {
+								slidesPerView: 1,
+								spaceBetween: 10
+							}
+						},
+						loop: true,
+					});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footerLine"></div>
+		<div class="friendsLink">
+			友情链接：
+			<div class="friendsList">
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+			</div>
+		</div>
+		<div class="copyRight">
+			地址：南昌市站前西路福山花园7_2栋2单位502   咨询热线：0791-28712933<br />
+			备案号：赣ICP备464313313号 Copyright © 2016 江西闽禹建设工程有限公司 版权所有  技术支持：云端科技
+		</div>
+	</div>
+</div>
+</body>
+</html>

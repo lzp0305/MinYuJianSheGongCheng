@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公司概况</title>
+	<link rel="stylesheet" href="style/main.css">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="style/swiper.min.css">
+	<!-- Swiper JS -->
+	<script src="js/swiper.min.js"></script>
+
+</head>
+<body>
+<div id="warp">
+	<div id="header">
+		<img src="images/logo.png" class="logo">
+		<div class="contacts">
+			<div class="telephone"></div>
+			<div class="hotLine">服务热线：</div>
+			<div class="telNum">0791-1234567</div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li style="width: 95px;"><a href="首页.html">首页</a></li>
+				<li><a href="公司概况.html">公司概况</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">企业业绩</a></li>
+				<li><a href="#">诚聘英才</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+			<div class="search">
+				<button class="searchIcon"><img src="images/searchIcon.gif" alt="搜索"></button>
+				<input type="text" placeholder="输入您想搜索的内容">
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="playBox">
+			<!-- Swiper -->
+			<div class="swiper-container container1">
+				<div class="swiper-wrapper wrapper1">
+					<div class="swiper-slide slide1"><img src="images/1.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/2.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/3.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/4.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/5.jpg" alt=""></div>
+					<div class="swiper-slide slide1"><img src="images/6.jpg" alt=""></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination pagination1"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next sbn1"></div>
+				<div class="swiper-button-prev sbp1"></div>
+			</div>
+			<script>
+			var swiper = new Swiper('.container1', {
+				pagination: '.pagination1',
+				nextButton: '.sbn1',
+				prevButton: '.sbp1',
+				paginationClickable: true,
+				spaceBetween: 0,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false,
+				loop : true,
+			});
+			</script>
+		</div>
+		<div class="leftBox">
+			<div class="leftNav">
+				<div class="navName">公司概况</div>
+				<div class="navList active"><a href="公司概况.html">公司简介</a></div>
+				<div class="navList"><a href="#">组织机构</a></div>
+				<div class="navList"><a href="#">营业范围</a></div>
+				<div class="navList"><a href="企业资质.html">企业资质</a></div>
+			</div>
+			<div class="information">
+				<div class="companyName">江西闽禹建设工程有限公司</div>
+				<div class="address">地址：南昌市站前西路福山<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;花园7_2栋2单位502<br />电话：0791-83800108<br />邮箱：zhjlzx01@163.com<br />网址：www.zhjlzx.com<br />
+				</div>
+			</div>
+		</div>
+		<div class="rightBox">
+			<div class="topList">
+				<div class="topListChinese">公司简介</div>
+				<div class="topListEnglish">Company profile</div>
+			</div>
+			<div class="line"></div>
+			<div class="mainBox">
+				<img src="images/mainImage.gif" alt="" class="img">
+				<div class="titleName">江西闽禹建设工程有限公司</div>
+				江西省闽禹建设工程有限公司成立于2011年7月，位于“文化昌盛，人文荟萃，才子之乡，文化之邦”，著名的宜业、宜居、宜游的“三宜城市”中国抚州市。处于“南昌远郊、闽台近邻”。公司以市政公用工程施工为主，注册资本金2000万人民币，现有在职职工116人，各类专业技术人员、建造师等31人。资质等级主项为市政公用工程施工总承包叁级，另房屋建筑工程施工总承包叁级，土石方工程专业承包叁级，建筑装修装饰工程专业承包叁级。公司将始终坚持“以质量求生存，以信誉求发展”的企业宗旨，本着“互惠互利，共同发展”的原则，热忱欢迎社会各界同仁及朋友通过各方在信息资源和地域资源的优势进行多方位、多层次的合作。具体合作事宜可以通过电话进行联系咨询，或预约后见面详谈。
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footerLine"></div>
+		<div class="friendsLink">
+			友情链接：
+			<div class="friendsList">
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+				<a href="#"><img src="images/friendsLink1.gif" alt=""></a>
+			</div>
+		</div>
+		<div class="copyRight">
+			地址：南昌市站前西路福山花园7_2栋2单位502   咨询热线：0791-28712933<br />
+			备案号：赣ICP备464313313号 Copyright © 2016 江西闽禹建设工程有限公司 版权所有  技术支持：云端科技
+		</div>
+	</div>
+</div>	
+</body>
+</html>

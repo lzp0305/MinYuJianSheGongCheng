@@ -1,0 +1,1033 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	outline: none;
+}
+
+body {
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+#warp {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 1000px;
+}
+
+.logo {
+	width: 444px;
+	height: 78px;
+	float: left;
+	margin-top: 21px;
+}
+.contacts {
+	width: 234px;
+	height: 88px;
+	float: right;
+}
+
+.telephone {
+	width: 69px;
+	height: 48px;
+	margin-top: 35px;
+	float: left;
+	background-image: url(../images/telephone.png);
+}
+
+.hotLine {
+	width: 157px;
+	height: 17px;
+	margin-top: 35px;
+	margin-left: 8px;
+	float: left;
+	font-family: SimHei;
+	font-size: 18px;
+}
+
+.telNum {
+	width: 157px;
+	height: 20px;
+	margin-top: 4px;
+	margin-left: 8px;
+	float: left;
+	font-family: Impact;
+	font-size: 24px;
+	color: #cb0019;
+}
+
+.nav {
+	width: 1000px;
+	height: 45px;
+	margin-top: 20px;
+	background-image: url(../images/nav.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.nav ul {
+	width: 800px;
+	height: 45px;
+	background: none;
+	float: left;
+}
+
+.nav ul li {
+	width: 141px;
+	float: left;
+	line-height: 45px;
+	text-align: center;
+}
+
+.nav ul li a {
+	color: #fff;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	display: block;
+}
+
+.nav .search {
+	width: 175px;
+	height: 32px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 13px;
+	background-image: url(../images/search.gif);
+	background-repeat: no-repeat;
+}
+
+.search button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.searchIcon {
+	width: 19px;
+	height: 19px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 7px;
+}
+
+.search input {
+	width: 135px;
+	height: 19px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 6px;
+	border-style: none;
+	outline: none;
+	background: transparent;
+}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+.playBox {
+	width: 1000px;
+	height: 292px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.container1 {
+	width: 1000px;
+	height: 292px;
+	margin-bottom: 20px;
+}
+
+.pagination1 {
+	z-index: 12px;
+}
+
+.slide1 {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+
+
+
+.firstArea {
+	width: 1000px;
+	height: 275px;
+	float: left;
+	margin-top: 20px;
+}
+
+.firstShowBox {
+	width: 295px;
+	height: 275px;
+	float: left;
+	margin-top: 6px;
+}
+
+.container2 {
+	width: 295px;
+	height: 275px;
+	z-index: 1;
+}
+.slide2 {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+        /* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.pagination2 {
+	float: left;
+	margin-left: 170px;
+	margin-top: -20px;
+	position: relative;
+	z-index: 12;
+}
+
+.pagination2 .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 0;
+	float: left;
+	text-align:center;
+	line-height:20px;
+	color:#000;
+	opacity: 1;
+	z-index: 100;
+}
+
+.pagination2 .swiper-pagination-bullet-active {
+	opacity: 1;
+	color:#fff;
+	background-color:#0179b6;
+}
+
+.shade {
+	width: 295px;
+	height: 40px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	z-index: 9;
+}
+
+
+
+
+
+
+
+
+
+.companyDynamics {
+	width: 446px;
+	margin-left: 14px;
+	float: left;
+	position: relative;
+}
+
+.companyTitleBar {
+	width: 100%;
+	height: 52px;
+	background-image: url(../images/titleBar.png);
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+.titleBarNameCap {
+	width: 117px;
+	height: 6px;
+	background-image: url(../images/titleBarNameCap.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.companyTitleBarName {
+	width: 107px;
+	height: 52px;
+	background-image: url(../images/titleBarName.png);
+	background-repeat: repeat-x;
+	position: relative;
+	left: 4px;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	color: #fff;
+	line-height: 52px;
+	text-align: center;
+}
+
+.companyDynamicsTitleBarNameNews {
+	width: 38px;
+	height: 41px;
+	background-image: url(../images/titleBarNameNews.png);
+	position: absolute;
+	top: 0;
+}
+
+.companyPageIcon {
+	width: 45px;
+	height: 27px;
+	background-image: url(../images/pageIcon.png);
+	position: absolute;
+	right: 12px;
+	bottom: 0;
+}
+
+.companyDynamicsTextBox {
+	width: 444px;
+	height: 230px;
+	float: left;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	background-color: #fff;
+}
+
+.companyDynamicsTitleText {
+	width: 444px;
+	height: 14px;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	float: left;
+	margin-top: 24px;
+	text-align: center;
+}
+
+.companyDynamicsMainText {
+	width: 425px;
+	height: 34px;
+	font-family: SimSun;
+	font-size: 12px;
+	line-height: 20px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 13px;
+	color: #6e6e6e;
+	text-align: justify;
+}
+
+.companyDynamicsList {
+	width: 423px;
+	height: 90px;
+	float: left;
+	margin-top: 33px;
+	margin-left: 15px;
+}
+
+.companyDynamicsListLeft {
+	width: 294px;
+	height: 90px;
+	float: left;
+	font-family: SimSun;
+	font-size: 12px;
+	color: #000;
+	line-height: 22px;
+}
+
+.companyDynamicsListLeft li {
+	list-style: url(../images/listIcon.png);
+}
+
+.companyDynamicsListLeft li a {
+	color: #000;
+}
+
+.companyDynamicsListRight {
+	width: 61px;
+	height: 90px;
+	float: left;
+	margin-left: 62px;
+	font-family: SimSun;
+	font-size: 12px;
+	color: #000;
+	line-height: 22px;
+	text-align: justify;
+}
+
+.latestAnnouncement {
+	width: 237px;
+	height: 283px;
+	float: left;
+	margin-left: 8px;
+}
+
+.latestAnnouncementMainBox {
+	width: 235px;
+	height: 230px;
+	float: left;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	background-color: #fff;
+}
+
+.latestAnnouncementList {
+	font-family: SimSun;
+	font-size: 12px;
+	line-height: 28px;
+	float: left;
+	margin-left: 34px;
+}
+
+.latestAnnouncementList a {
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+.secondArea {
+	width: 1000px;
+	height: 290px;
+	float: left;
+	margin-top: 20px;
+}
+
+.companyProfile {
+	width: 554px;
+	height: 290px;
+	float: left;
+	position: absolute;
+}
+
+.companyProfileMainBox {
+	width: 552px;
+	height: 238px;
+	float: left;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+}
+
+.companyProfilePic {
+	width: 218px;
+	height: 190px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 13px;
+	background-image: url(../images/companyProfilePic.png);
+}
+
+.companyProfileText {
+	width: 300px;
+	height: 116px;
+	float: left;
+	margin-left: 11px;
+	margin-top: 63px;
+	font-family: SimSun;
+	font-size: 12px;
+	color: #373737;
+	line-height: 23px;
+	text-align: justify;
+}
+
+.enterprisePerformance {
+	width: 436px;
+	height: 290px;
+	float: right;
+	margin-left: 12px;
+	position: relative;
+}
+
+.enterprisePerformanceTab {
+	width: 434px;
+	height: 238px;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+}
+
+#tab1 {
+	width:434px;
+	height:29px;
+	border-bottom: 1px solid #dcdcdc;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	position: relative;
+	top: 15px;
+}
+
+.more {
+	width:80px;
+	height: 30px;
+	float:left;
+	line-height:30px;
+	text-align:right;
+	cursor:pointer;
+}
+
+.more a {
+	font-family: SimSun;
+	font-size:12px;
+	line-height:24px;
+	text-decoration: none;
+	color: #000; 
+}
+
+#tab1 ul {
+	margin:0;
+	padding:0;
+}
+
+#tab1 li {
+	width:80px;
+	height: 30px;
+	float:left;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+}
+
+#tab1 li.now {
+	color:#f00;
+	background-image: url(../images/listNow.png);
+	font-weight:bold;
+}
+
+.tablist1 {
+	border-top: 1px solid #ddd;
+}
+
+.tablist {
+	width:415px;
+	height:194px;
+	margin-left: 16px;
+	margin-top: 40px;
+	display:none;
+}
+
+.tablist a {
+	width: 305px;
+	height: 24px;
+	font-family: SimSun;
+	font-size:12px;
+	line-height:24px;
+	text-decoration: none;
+	color: #000; 
+}
+
+.block {
+	display:block;
+}
+
+.tablist .righttime {
+	font-family: SimSun;
+	font-size:12px;
+	line-height:24px;
+	float: right;
+	margin-right: 25px;
+}
+
+
+
+
+
+
+
+
+.thirdArea {
+	width: 1000px;
+	height: 286px;
+	float: left;
+	margin-top: 20px;
+	position: relative;
+}
+
+.enterpriseQualifiacationShowBox {
+	width: 998px;
+	height: 233px;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+}
+
+.container3 {
+	width: 930px;
+	height: 233px;
+}
+
+.slide3 {
+	width: 170px;
+	height: 233px;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.slide3Main {
+	width: 168px;
+	height: 231px;
+	border: 1px solid #dcdcdc;
+}
+
+.slide3Main img {
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+
+.slide3Main span {
+	width: 168px;
+	height: 16px;
+	float: left;
+	margin-top: 12px;
+	font-family: Microsoft YaHei;
+	font-size: 16px;
+	text-align: center;
+}
+
+.sbn3 {
+	margin-top: 0 !important;
+}
+
+.sbp3 {
+	margin-top: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.leftBox {
+	width: 240px;
+	float: left;
+	margin-top: 20px;
+}
+
+.leftNav {
+	width: 229px;
+	height: 258px;
+	float: left;
+}
+
+.navName {
+	width: 229px;
+	height: 80px;
+	float: left;
+	background-image: url(../images/leftNav.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	line-height: 80px;
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	color: #fff;
+}
+
+.navList {
+	width: 227px;
+	height: 44px;
+	line-height: 44px;
+	float: left;
+	text-align: center;
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	font-family: Microsoft YaHei;
+	font-size: 16px;
+}
+
+.navList a {
+	font-family: Microsoft YaHei;
+	color: #000;
+	display: block;
+}
+
+.navList:hover {
+	background-color: #dcdcdc;
+}
+
+.leftNav .active {
+	background-color: #dcdcdc;
+}
+
+.information {
+	width: 240px;
+	height: 260px;
+	float: left;
+	margin-top: 60px;
+	background-image: url(../images/info.gif);
+	background-repeat: no-repeat;
+}
+
+.companyName {
+	width: 192px;
+	height: 16px;
+	float: left;
+	margin-top: 24px;
+	margin-left: 19px;
+	line-height: 16px;
+	font-family: Microsoft YaHei;
+	font-size: 16px;
+	color: #007fbf;
+}
+
+.address {
+	width: 195px;
+	height: 118px;
+	float: left;
+	margin-top: 26px;
+	margin-left: 19px;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	color: #000;
+	text-align: justify;
+}
+
+.rightBox {
+	width: 760px;
+	float: right;
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.topList {
+	width: 150px;
+	height: 45px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 13px;
+}
+
+.topListChinese {
+	width: 96px;
+	height: 24px;
+	float: left;
+	font-family: Microsoft YaHei;
+	font-size: 24px;
+	color: #007fbf;
+}
+
+.topListEnglish {
+	//width: 96px;
+	height: 11px;
+	float: left;
+	margin-top: 8px;
+	font-family: Arial;
+	font-size: 12px;
+	color: #000;
+}
+
+.line {
+	width: 760px;
+	height: 29px;
+	float: left;
+	background-image: url(../images/line.gif);
+	background-repeat: repeat-x;
+}
+
+.mainBox {
+	width: 750px;
+	float: right;
+	margin-top: 9px;
+	line-height: 34px;
+}
+
+.mainBoxImage {
+	width: 286px;
+	height: 212px;
+	float: right;
+	margin-right: 10px;
+}
+
+.infoBoxTitle {
+	width: 297px;
+	height: 22px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 121px;
+	font-family: Microsoft YaHei;
+	font-size: 22px;
+	color: #000;
+}
+
+.infoBoxText {
+	width: 297px;
+	height: 135px;
+	float: right;
+	margin-top: 24px;
+	margin-right: 121px;
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	color: #000;
+	line-height: 28px;
+	text-align: justify;
+}
+
+.map {
+	width: 740px;
+	height: 365px;
+	float: right;
+	margin-top: 55px;
+}
+
+.iw_poi_title {
+	color:#d74418;
+	font-size:18px;
+	font-weight:bold;
+	overflow:hidden;
+	padding-right:13px;
+	white-space:nowrap;
+}
+
+.iw_poi_content {
+	overflow:visible;
+	padding-top:4px;
+	white-space:-moz-pre-wrap;
+	word-wrap:break-word;
+	line-height:24px;
+	color:#616364;
+	font-weight:bold;
+}
+
+.con_map {
+	width:738px;
+	height:363px;
+	border:1px solid #fff;
+}
+
+
+.credentialBox {
+	width: 170px;
+	height: 220px;
+	float: left;
+	margin-right: 19px;
+}
+
+.credentialBoxRight {
+	margin-right: 0px
+}
+
+.credentialBackground {
+	width: 170px;
+	height: 170px;
+	float: left;
+	background-color: #fff;
+}
+
+.credentialBackground img {
+	margin: 23px 5px;
+}
+
+.credentialText {
+	text-align: center;
+	font-family: Microsoft YaHei;
+	font-size: 16px;
+}
+
+.titleName {
+	width: 340px;
+	height: 20px;
+	float: left;
+	margin-left: 66px;
+	margin-bottom: 30px;
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	color: #000;
+}
+
+.mainBox .img {
+	float:left;
+	margin-top: 50px;
+	margin-right:13px;
+	margin-bottom:3px;
+}
+
+.butLine {
+	width: 464px;
+	height: 34px;
+	float: right;
+	margin-right: 172px;
+}
+
+.firstAndLastButton {
+	width: 55px;
+	height: 34px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #000;
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+.prevButton {
+	width: 75px;
+	height: 34px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #000;
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+.numButton {
+	width: 34px;
+	height: 34px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #000;
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+.now {
+	background-color: #0179b6;
+	color: #fff;
+}
+
+.nextButton {
+	width: 75px;
+	height: 34px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	font-family: Microsoft YaHei;
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	color: #000;
+	margin-right: 9px;
+	cursor: pointer;
+}
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+#footer {
+	width: 1000px;
+	height: 271px;
+	float: left;
+}
+
+.footerLine {
+	background-image: url(../images/footerLine.gif);
+	background-repeat: repeat-x;
+	float: left;
+	width: 1000px;
+	height: 85px;
+}
+
+.friendsLink {
+	width: 1000px;
+	height: 60px;
+	float: left;
+	font-family: Microsoft YaHei;
+	font-size: 16px;
+	color: #0a4f74;
+	line-height: 60px;
+}
+
+.friendsList {
+	width: 920px;
+	height: 60px;
+	float: right;
+}
+
+.friendsList img {
+	width: 147px;
+	height: 60px;
+	float: left;
+	margin-right: 6px;
+}
+
+.copyRight {
+	width: 582px;
+	height: 40px;
+	float: left;
+	margin-top: 56px;
+	margin-left: 204px;
+	font-family: SimSun;
+	font-size: 12px;
+	text-align: center;
+}
